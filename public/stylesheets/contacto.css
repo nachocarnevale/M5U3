@@ -1,0 +1,240 @@
+.wrapp-centrado {
+  display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: center;
+}
+
+.logo-contacto{
+  width: 10vh;
+  height: 10vh;
+  margin: 1vh 0 1vh 0;
+}
+
+.item-logo {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-around;
+  margin-bottom: 8vh;
+}
+
+.titulo-contacto {
+  color: white;
+  margin-top: 8vh;
+  margin-bottom: 4vh;
+}
+
+.titulo-contacto h3 {
+  font-family: 'roboto';
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.titulo-competi {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: white;
+  font-size: 5rem;
+  margin-top: 5vh;
+  margin-bottom: 0vh;
+}
+
+.line-contacto {
+  background-color: #686868;
+  height: 0.6vh;
+  border-radius: 3vh;
+  width: 35%;
+}
+
+input[type='button'] {
+  font-family: Roboto;
+}
+
+.contact-form-widget {
+  margin-left: 0;
+  max-width: 500px;
+  padding: 0;
+  width: 100%;
+  height: auto;
+}
+
+.contact-form-email,
+.contact-form-email-message,
+.contact-form-name {
+  max-width: 100%;
+  width: 100%;
+  transition: .3s linear;
+}
+
+.contact-form-email,
+.contact-form-name {
+  font-family: Roboto;
+  font-size: 15px;
+  background: #fafafa;
+  border-bottom: 3px solid #03a9f4;
+  box-sizing: border-box;
+  color: #888;
+  display: inline-block;
+  height: 40px;
+  margin: 0;
+  margin-top: 5px;
+  padding: 10px;
+  vertical-align: top;
+  transition: .3s linear;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+.contact-form-email-message {
+  font-family: Roboto;
+  font-size: 15px;
+  background: #fafafa;
+  border-bottom: 3px solid #03a9f4;
+  box-sizing: border-box;
+  color: #888;
+  display: inline-block;
+  margin: 0;
+  margin-top: 5px;
+  padding: 10px;
+  vertical-align: top;
+  transition: .3s linear;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  resize: none;
+}
+
+.contact-form-email:hover,
+.contact-form-name:hover,
+.contact-form-email-message:hover {
+  border-bottom: 3px solid #f8695f;
+  outline: none;
+  box-shadow: none;
+  transition: .3s linear;
+  background: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+.contact-form-email:focus,
+.contact-form-name:focus,
+.contact-form-email-message:focus {
+  background: #fafafa;
+  border-bottom: 3px solid #f8695f;
+  color: #666;
+  outline: none;
+  box-shadow: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+form {
+  color: #999;
+}
+
+.contact-form-button-submit {
+  transition: .3s linear;
+  box-shadow: none;
+  text-transform: none;
+  padding: 10px 20px 7px 20px;
+  border: none;
+  height: 40px;
+  margin: 20px 0 0 0;
+  float: left;
+  background: #03a9f4;
+  border-bottom: 3px solid #029ce3;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 3px;
+}
+
+.contact-form-button-submit:hover,
+.contact-form-button-submit:focus {
+  background-color: #029ce3;
+  background-image: none;
+  border-bottom: 3px solid #0292d4;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  transition: .3s linear;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+.contact-form-error-message {
+  background: transparent;
+  border: none;
+  bottom: 0;
+  box-shadow: none;
+  color: #666;
+  font-size: 11px;
+  ;
+  line-height: 20px;
+  margin-left: 0;
+  opacity: 1;
+  position: static;
+}
+
+.contact-form-error-message-with-border {
+  background: #f8695f;
+  bottom: 0;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-left: 20px;
+  opacity: 1;
+  position: static;
+  padding: 5px 0;
+  transition: all 0.1s linear;
+  text-align: center;
+  border-radius: 2px;
+  border: none;
+}
+
+.contact-form-success-message {
+  background: transparent;
+  border: none;
+  bottom: 0;
+  box-shadow: none;
+  color: #666;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-left: 0;
+  opacity: 1;
+  position: static;
+  text-align: center;
+  border-radius: 2px;
+}
+
+.nama,
+.email,
+.pesan {
+  text-align: left;
+  color: #999;
+}
+
+.exitosamente {
+  color: rgb(215, 215, 184);
+  margin: 0%;
+}
+
+.boton-enviar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.reglamento {
+  margin-top: 3%;
+}

@@ -1,0 +1,108 @@
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+
+<div class="logout wrapp">
+  {{!-- fila1·--}}
+  <div class="row">
+    <div class="col">
+      <p class="text-right">
+        <span> Hola {{usuario}} <span>
+            <a href="/admin/login/logout" class="btn btn-danger"> Cerrar sesión<i class="fas
+                        fa-sign-out-alt"></i></a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="row wrapp">
+  <div class="col-7" style="margin-top:-9px;">
+    <h2 class="tituloadmin">Inscripciones LAF</h2>
+  </div>
+  <div class="col-5 text-right">
+    <a href="/admin/novedades/agregar-inscripciones" class="btn btn-success"><i class="fas fa-plus"></i>
+      Nuevo </a>
+  </div>
+</div>
+
+<div class="row wrapp">
+  <div class="table-responsive">
+    <table class="table">
+      <thead class="thead">
+        <tr class="listado">
+          <th scope="col">#</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Apellido</th>
+          <th scope="col">Email</th>
+          <th scope="col">Steam</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each novedades}}
+        <tr class="listadocontenido">
+          <th scope="row">{{id}}</th>
+          <td>{{nombre}}</td>
+          <td>{{apellido}}</td>
+          <td>{{email}}</td>
+          <td>{{steam}}</td>
+          <td class="text-right">
+            <a href="/admin/novedades/modificar/{{id}}" class="btn btn-secondary"> <i class="fas fa-pencil-alt"></i>
+            </a>
+            <a href="/admin/novedades/eliminar/{{id}}" class="btn btn-secondary"> <i class="fas fa-trash"></i> </a>
+          </td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="row wrapp">
+  <div class="col-7" style="margin-top:10%;">
+    <h2 class="tituloadmin">Ganadores LAF</h2>
+  </div>
+  <div class="col-5 text-right">
+    <a href="/admin/novedades/agregar-ganadores" class="btn btn-success"><i class="fas fa-plus"></i>
+      Nuevo </a>
+  </div>
+</div>
+
+<div class="row wrapp">
+  <div class="table-responsive">
+    <table class="table">
+      <thead class="thead">
+        <tr class="listado">
+          <th scope="col">#</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Apellido</th>
+          <th scope="col">Equipo</th>
+          <th scope="col">Liga</th>
+          <th scope="col">Temporada</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        {{#each novedadesGanadores}}
+        <tr class="listadocontenido">
+          <th scope="row">{{id}}</th>
+          <td>{{nombre}}</td>
+          <td>{{apellido}}</td>
+          <td>{{equipo}}</td>
+          <td>{{liga}}</td>
+          <td>{{temporada}}</td>
+          <td class="text-right">
+            <a href="/admin/novedades/modificar-ganadores/{{id}}" class="btn btn-secondary"> <i
+                class="fas fa-pencil-alt"></i> </a>
+            <a href="/admin/novedades/eliminar-ganadores/{{id}}" class="btn btn-secondary"> <i class="fas fa-trash"></i>
+            </a>
+          </td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</div>

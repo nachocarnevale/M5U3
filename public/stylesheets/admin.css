@@ -1,0 +1,36 @@
+.nav_linksbar li a {
+    color: white;
+}
+
+form {
+    
+}
+
+.text-right span {
+    color: rgb(193, 193, 193);
+}
+
+.logout {
+    margin-top:2%;
+    margin-bottom:5%;
+}
+
+.tituloadmin {
+    color: rgb(255, 157, 0);
+    font-family: 'roboto';
+    font-weight: 400;
+}
+
+.thead{
+    background-color: rgb(59, 59, 59);
+}
+
+.listado {
+    font-size: 1.6rem;
+    color: rgb(232, 195, 137);
+}
+
+.listadocontenido {
+    font-size: 1.6rem;
+    color: rgb(215, 215, 215) !important
+}

@@ -1,0 +1,146 @@
+<head>
+  <!-- CSS and JS file -->
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
+  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+  <!-- CSS and JS file end here -->
+</head>
+
+
+<section class="nosotroscontainer wrapp">
+            <div class="nosotros">
+                <div class="nosotros1">
+                    <h3>¿QUIENES SOMOS?</h3>
+                    <h2>
+                        Somos un grupo de amigos que decidimos armar una liga propia.
+                         En cada temporada intentamos mejorar más, y por eso estamos buscando a pilotos que quieran correr seriamente.
+                    <h2>
+                </div>
+                <div class="nosotros2">
+                    <h3>¿DONDE CORREMOS?</h3>
+                    <h2>
+                        Nuestra liga se da en el Videojuego Oficial de F1 en PC por Steam, y los pilotos se pueden inscribir en dos categorías
+                        , A y B.
+                    <h2>
+                </div>
+            </div>
+</section>
+
+<section class="line-container wrapp-line">
+    <div class="line wrapp"></div>
+</section>
+
+
+
+
+
+<section class="hero-section wrap">
+  <div class="card-grid">
+    <a class="card" href="#">
+      <div class="card__background" style="background-image: url('images/trofeo.png');"></div>
+      <div class="card__content">
+        <p class="card__category">Liga de Contructores</p>
+      </div>
+    </a>
+    <a class="card" href="#">
+      <div class="card__background" style="background-image: url('images/trofeo.png');"></div>
+      <div class="card__content">
+        <p class="card__category">Liga de pilotos</p>
+      </div>
+    </a>
+    <a class="card" href="#">
+      <div class="card__background" style="background-image: url('images/trofeo.png');"></div>
+      <div class="card__content">
+        <p class="card__category">Premio Far Play</p>
+      </div>
+    </li>
+    <a class="card" href="#">
+      <div class="card__background" style="background-image: url('images/trofeo.png');"></div>
+      <div class="card__content">
+        <p class="card__category">Category</p>
+      </div>
+    </a>
+  <div>
+</section>
+
+
+    <!-- Testimonios -->
+
+<section class="carousel-bg" style="margin-top:1% ;">
+  <!-- Quote Image -->
+  <div class="carousel-img">
+    <img src="https://i.imgur.com/gZ5HY0U.png" class="img-responsive quote-image">
+  </div>
+  <!-- Carousel Start below -->
+  <div id="carousel1" class="carousel slide testimonial-style" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel1" data-slide-to="1"></li>
+      <li data-target="#carousel1" data-slide-to="2"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <div class="carousel-caption testimonial-caption-style">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae semper quis lectus nulla at volutpat diam.</p>
+          <p class="testimonial-authors">Person 1</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="carousel-caption testimonial-caption-style">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae semper quis lectus nulla at volutpat diam.</p>
+          <p class="testimonial-authors">Person 2</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="carousel-caption testimonial-caption-style">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae semper quis lectus nulla at volutpat diam.</p>
+          <p class="testimonial-authors">Person 3</p>
+        </div>
+      </div>
+    </div>
+
+
+    <a class="left carousel-control" href="#carousel1" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a>
+    <a class="right carousel-control" href="#carousel1" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
+  </div>
+</section>
+
+    <!-- Fin testimonios -->
+
+
+<div class="row wrapp" style="margin-top:8% ;">
+    <h1 class="mx-auto murofama" style="width: auto">Ganadores de la liga</h1>
+  <div class="table-responsive wrapp" >
+    <table class="table">
+      <thead class="thead">
+        <tr class="listado">
+          <th scope="col">Nombre</th>
+          <th scope="col">Apellido</th>
+          <th scope="col">Equipo</th>
+          <th scope="col">Liga</th>
+          <th scope="col">Temporada</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        {{#each novedadesGanadores}}
+        <tr class="listadocontenido">
+          <td>{{nombre}}</td>
+          <td>{{apellido}}</td>
+          <td>{{equipo}}</td>
+          <td>{{liga}}</td>
+          <td>{{temporada}}</td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+
